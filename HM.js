@@ -8,9 +8,9 @@ const server = http.createServer((req, res) => {
 //EL servidor respondera un codigo 200 
 res.statusCode = 200;
 //EL servidor respondera con un texto plano 
-res.setHeader('Content-Type', 'text/plain');
+res.setHeader('Content-Type', 'text/html');
 //El servidor respondera el mensaje hola mundo
- res.end('Hola Mundo\n');
+ res.end('<p>Maria Isabel Chacon Rodriguez</p>');
 });
 server.listen(port, hostname, () => { 
 console.log(`El servidor se está ejecutando en http://${hostname}:${port}/`);
